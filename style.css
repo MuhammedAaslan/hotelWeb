@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    height: 100vh;
+    background-image: url(./assets/bg-image/hotels.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: top 5s ease-out both;
+    /* border: 5px solid red; */
+
+}
+
+img {
+
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+@keyframes top {
+    from {
+        background-position: 0% 0%
+    }
+
+    to {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+
+    height: 50%;
+    margin: 0 10rem;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container ul {
+        /* display: flex; */
+        background-color: rgb(156, 187, 187);
+    }
+
+    img {
+        height: 40%;
+        width: 40%;
+    }
+
+}
